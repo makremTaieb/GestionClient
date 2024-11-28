@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public class GestionClient : IGestionClient
+public class GestionClients : IGestionClient
 {
     private readonly List<Client> clients;
 
-    public GestionClient()
+    public GestionClients()
     {
         clients = new List<Client>();
     }

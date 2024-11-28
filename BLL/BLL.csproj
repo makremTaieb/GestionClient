@@ -44,7 +44,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="ClientStandard.cs" />
     <Compile Include="ClientVIP.cs" />
-    <Compile Include="GestionClient.cs" />
+    <Compile Include="GestionClients.cs" />
     <Compile Include="IGestionClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

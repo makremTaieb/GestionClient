@@ -33,11 +33,11 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            textId = new TextBox();
+            textCA = new TextBox();
+            textDateCreation = new TextBox();
+            textQa = new TextBox();
+            textDateAffec = new TextBox();
             button1 = new Button();
             SuspendLayout();
             // 
@@ -88,61 +88,62 @@
             label5.Text = "DateAffectation";
             label5.Click += label4_Click;
             // 
-            // textBox1
+            // textId
             // 
-            textBox1.Location = new Point(150, 41);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(227, 27);
-            textBox1.TabIndex = 1;
+            textId.Location = new Point(150, 41);
+            textId.Name = "textId";
+            textId.Size = new Size(227, 27);
+            textId.TabIndex = 1;
             // 
-            // textBox2
+            // textCA
             // 
-            textBox2.Location = new Point(150, 74);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(227, 27);
-            textBox2.TabIndex = 1;
+            textCA.Location = new Point(150, 74);
+            textCA.Name = "textCA";
+            textCA.Size = new Size(227, 27);
+            textCA.TabIndex = 1;
             // 
-            // textBox3
+            // textDateCreation
             // 
-            textBox3.Location = new Point(150, 107);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(227, 27);
-            textBox3.TabIndex = 1;
+            textDateCreation.Location = new Point(150, 107);
+            textDateCreation.Name = "textDateCreation";
+            textDateCreation.Size = new Size(227, 27);
+            textDateCreation.TabIndex = 1;
             // 
-            // textBox4
+            // textQa
             // 
-            textBox4.Location = new Point(150, 141);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(227, 27);
-            textBox4.TabIndex = 1;
+            textQa.Location = new Point(150, 141);
+            textQa.Name = "textQa";
+            textQa.Size = new Size(227, 27);
+            textQa.TabIndex = 1;
             // 
-            // textBox5
+            // textDateAffec
             // 
-            textBox5.Location = new Point(150, 174);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(227, 27);
-            textBox5.TabIndex = 1;
+            textDateAffec.Location = new Point(150, 174);
+            textDateAffec.Name = "textDateAffec";
+            textDateAffec.Size = new Size(227, 27);
+            textDateAffec.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(29, 257);
+            button1.Location = new Point(283, 244);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 2;
             button1.Text = "Ajouter";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // AjouterClientStandard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(534, 316);
+            ClientSize = new Size(404, 296);
             Controls.Add(button1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(textDateAffec);
+            Controls.Add(textQa);
+            Controls.Add(textDateCreation);
+            Controls.Add(textCA);
+            Controls.Add(textId);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -150,6 +151,7 @@
             Controls.Add(label1);
             Name = "AjouterClientStandard";
             Text = "AjouterClientStandard";
+            Load += AjouterClientStandard_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -161,11 +163,11 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox textId;
+        private TextBox textCA;
+        private TextBox textDateCreation;
+        private TextBox textQa;
+        private TextBox textDateAffec;
         private Button button1;
     }
 }

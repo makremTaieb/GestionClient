@@ -30,12 +30,12 @@
         {
             label1 = new Label();
             flowLayoutPanel1 = new FlowLayoutPanel();
-            radioButton1 = new RadioButton();
+            radioClientStand = new RadioButton();
+            radioButton2 = new RadioButton();
             listBox1 = new ListBox();
             flowLayoutPanel2 = new FlowLayoutPanel();
             button1 = new Button();
             button2 = new Button();
-            radioButton2 = new RadioButton();
             flowLayoutPanel1.SuspendLayout();
             flowLayoutPanel2.SuspendLayout();
             SuspendLayout();
@@ -52,23 +52,34 @@
             // 
             // flowLayoutPanel1
             // 
-            flowLayoutPanel1.Controls.Add(radioButton1);
+            flowLayoutPanel1.Controls.Add(radioClientStand);
             flowLayoutPanel1.Controls.Add(radioButton2);
             flowLayoutPanel1.Location = new Point(3, 84);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(371, 52);
             flowLayoutPanel1.TabIndex = 1;
             // 
-            // radioButton1
+            // radioClientStand
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(3, 3);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(132, 24);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Client Standard";
-            radioButton1.UseVisualStyleBackColor = true;
+            radioClientStand.AutoSize = true;
+            radioClientStand.Location = new Point(3, 3);
+            radioClientStand.Name = "radioClientStand";
+            radioClientStand.Size = new Size(132, 24);
+            radioClientStand.TabIndex = 0;
+            radioClientStand.TabStop = true;
+            radioClientStand.Text = "Client Standard";
+            radioClientStand.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            radioButton2.AutoSize = true;
+            radioButton2.Location = new Point(141, 3);
+            radioButton2.Name = "radioButton2";
+            radioButton2.Size = new Size(93, 24);
+            radioButton2.TabIndex = 1;
+            radioButton2.TabStop = true;
+            radioButton2.Text = "Client VIP";
+            radioButton2.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
@@ -77,6 +88,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(371, 244);
             listBox1.TabIndex = 2;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // flowLayoutPanel2
             // 
@@ -95,6 +107,7 @@
             button1.TabIndex = 0;
             button1.Text = "Ajouter";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -104,17 +117,6 @@
             button2.TabIndex = 1;
             button2.Text = "Supprimer";
             button2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(141, 3);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(93, 24);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Client VIP";
-            radioButton2.UseVisualStyleBackColor = true;
             // 
             // GestionClient
             // 
@@ -137,7 +139,7 @@
 
         private Label label1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private RadioButton radioButton1;
+        private RadioButton radioClientStand;
         private ListBox listBox1;
         private FlowLayoutPanel flowLayoutPanel2;
         private Button button1;
