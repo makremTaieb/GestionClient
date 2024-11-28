@@ -21,5 +21,15 @@ namespace BLL
             Quantite = quantite;
             DateAffectation = dateAffectation;
         }
+
+
+        public override string ToString()
+        {
+            return "ClientStandard [ID: " + IdClient +
+                   ", CA: " + CA +
+                   ", DateCreation: " + DateCreation.ToString("yyyy-MM-dd") +
+                   ", Quantite: " + Quantite +
+                   ", DateAffectation: " + DateAffectation.ToString("yyyy-MM-dd") + "]";
+        }
     }
 }

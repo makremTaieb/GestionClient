@@ -22,5 +22,11 @@ namespace BLL
             CA = ca;
             DateCreation = dateCreation;
         }
+
+
+        public override string ToString()
+        {
+            return "Client [ID: " + IdClient + ", CA: " + CA + ", DateCreation: " + DateCreation.ToString("yyyy-MM-dd") + "]";
+        }
     }
 }
